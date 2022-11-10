@@ -6,11 +6,10 @@ const express = require("express");
 const app = express();
 
 
-
 app.get("/", (req, res) => {
-    res.send("Hi there");
+   console.log("hello world")
+   res.send("I love Sarah")
 });
 
-app.listen(() => {
-    console.log(`Listening on the port ${PORT}`);
-});
+
+app.listen(PORT , () => console.log(`listeninging on port ${PORT}`));
