@@ -14,5 +14,11 @@ app.get("/", (req, res) => {
 });
 
 
+app.get("/new", (req, res) => {
+   console.log("hello new page")
+   res.render("new.ejs")
+});
+
+
 
 app.listen(PORT , () => console.log(`listeninging on port ${PORT}`));
